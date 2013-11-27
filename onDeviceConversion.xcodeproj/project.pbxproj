@@ -22,6 +22,10 @@
 		A85DFDE2184526FC0069B719 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85DFDC1184526FC0069B719 /* UIKit.framework */; };
 		A85DFDEA184526FC0069B719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A85DFDE8184526FC0069B719 /* InfoPlist.strings */; };
 		A85DFDEC184526FC0069B719 /* onDeviceConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A85DFDEB184526FC0069B719 /* onDeviceConversionTests.m */; };
+		A85DFDF8184527450069B719 /* WSUTF8Conversion.mm in Sources */ = {isa = PBXBuildFile; fileRef = A85DFDF7184527450069B719 /* WSUTF8Conversion.mm */; };
+		A85DFDFB184529A00069B719 /* UTF8Conversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A85DFDF9184529A00069B719 /* UTF8Conversion.cpp */; };
+		A85DFE0218452F9C0069B719 /* Isocortex.mtl in Resources */ = {isa = PBXBuildFile; fileRef = A85DFE0018452F9C0069B719 /* Isocortex.mtl */; };
+		A85DFE0318452F9C0069B719 /* Isocortex.obj in Resources */ = {isa = PBXBuildFile; fileRef = A85DFE0118452F9C0069B719 /* Isocortex.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,16 @@
 		A85DFDE7184526FC0069B719 /* onDeviceConversionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "onDeviceConversionTests-Info.plist"; sourceTree = "<group>"; };
 		A85DFDE9184526FC0069B719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A85DFDEB184526FC0069B719 /* onDeviceConversionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = onDeviceConversionTests.m; sourceTree = "<group>"; };
+		A85DFDF6184527450069B719 /* WSUTF8Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSUTF8Conversion.h; sourceTree = "<group>"; };
+		A85DFDF7184527450069B719 /* WSUTF8Conversion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WSUTF8Conversion.mm; sourceTree = "<group>"; };
+		A85DFDF9184529A00069B719 /* UTF8Conversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UTF8Conversion.cpp; sourceTree = "<group>"; };
+		A85DFDFA184529A00069B719 /* UTF8Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTF8Conversion.h; sourceTree = "<group>"; };
+		A85DFDFC18452B6C0069B719 /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		A85DFDFD18452B820069B719 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		A85DFDFE18452B8A0069B719 /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		A85DFDFF18452C130069B719 /* optimize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = optimize.h; sourceTree = "<group>"; };
+		A85DFE0018452F9C0069B719 /* Isocortex.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Isocortex.mtl; sourceTree = "<group>"; };
+		A85DFE0118452F9C0069B719 /* Isocortex.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Isocortex.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +128,7 @@
 		A85DFDC3184526FC0069B719 /* onDeviceConversion */ = {
 			isa = PBXGroup;
 			children = (
+				A85DFDF5184527080069B719 /* objconversion */,
 				A85DFDCC184526FC0069B719 /* WSAppDelegate.h */,
 				A85DFDCD184526FC0069B719 /* WSAppDelegate.m */,
 				A85DFDCF184526FC0069B719 /* Main_iPhone.storyboard */,
@@ -153,6 +168,23 @@
 				A85DFDE8184526FC0069B719 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A85DFDF5184527080069B719 /* objconversion */ = {
+			isa = PBXGroup;
+			children = (
+				A85DFE0018452F9C0069B719 /* Isocortex.mtl */,
+				A85DFE0118452F9C0069B719 /* Isocortex.obj */,
+				A85DFDFF18452C130069B719 /* optimize.h */,
+				A85DFDFC18452B6C0069B719 /* mesh.h */,
+				A85DFDFE18452B8A0069B719 /* utf8.h */,
+				A85DFDFD18452B820069B719 /* base.h */,
+				A85DFDF6184527450069B719 /* WSUTF8Conversion.h */,
+				A85DFDF7184527450069B719 /* WSUTF8Conversion.mm */,
+				A85DFDF9184529A00069B719 /* UTF8Conversion.cpp */,
+				A85DFDFA184529A00069B719 /* UTF8Conversion.h */,
+			);
+			name = objconversion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85DFE0218452F9C0069B719 /* Isocortex.mtl in Resources */,
 				A85DFDD4184526FC0069B719 /* Main_iPad.storyboard in Resources */,
 				A85DFDD9184526FC0069B719 /* Images.xcassets in Resources */,
 				A85DFDD1184526FC0069B719 /* Main_iPhone.storyboard in Resources */,
+				A85DFE0318452F9C0069B719 /* Isocortex.obj in Resources */,
 				A85DFDC8184526FC0069B719 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85DFDF8184527450069B719 /* WSUTF8Conversion.mm in Sources */,
 				A85DFDCE184526FC0069B719 /* WSAppDelegate.m in Sources */,
 				A85DFDCA184526FC0069B719 /* main.m in Sources */,
 				A85DFDD7184526FC0069B719 /* WSViewController.m in Sources */,
+				A85DFDFB184529A00069B719 /* UTF8Conversion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

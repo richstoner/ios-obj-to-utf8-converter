@@ -7,6 +7,7 @@
 //
 
 #import "WSViewController.h"
+#import "WSUTF8Conversion.h"
 
 @interface WSViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    WSUTF8Conversion* converter = [WSUTF8Conversion new];
+    [converter testConvert];
+    
 }
 
 - (void)didReceiveMemoryWarning
